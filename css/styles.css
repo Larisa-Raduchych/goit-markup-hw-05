@@ -747,6 +747,13 @@ img {
   margin-bottom: 8px;
 }
 
+.modal-form-comment {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
 .modal-form-label {
   font-weight: 400;
   font-size: 12px;
