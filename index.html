@@ -480,12 +480,27 @@
                 class="modal-form-textarea"
                 name="description"
                 placeholder="Text input"
-                rows="5"
               ></textarea>
             </div>
           </div>
-
-          <button type="submit">Send</button>
+          <div class="policy-wrapper">
+            <input
+              class="checkbox-input sr-only"
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+            />
+            <label for="checkbox">
+              <span>
+                <svg width="10px" height="8px">
+                  <use href="./images/icons.svg#check-mark"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="modal-button" type="submit">Send</button>
         </form>
       </div>
     </div>
