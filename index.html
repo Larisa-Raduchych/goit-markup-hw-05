@@ -434,39 +434,58 @@
     <div class="modal-overlay is-open">
       <div class="modal">
         <button class="modal-close-button" type="button">
-          <svg width="8px" height="8px">
+          <svg class="modal-close-icon" width="8px" height="8px">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
 
         <form class="form" name="issue_report_form" autocomplete="off">
-          <label class="form-label">
-            Name
-            <input class="form-input" type="text" name="name" />
-          </label>
+          <div class="modal-form-wrapper">
+            <label class="modal-form-label" for="name">Name</label>
+            <div class="modal-input-wrapper">
+              <input
+                class="modal-form-input"
+                type="text"
+                name="name"
+                autofocus
+              />
+              <svg class="modal-form-icon" width="18px" height="24px">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form-wrapper">
+            <label class="modal-form-label">Phone</label>
+            <div class="modal-input-wrapper">
+              <input class="modal-form-input" type="text" name="phone" />
+              <svg class="modal-form-icon" width="18px" height="24px">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form-wrapper">
+            <label class="modal-form-label">Email</label>
+            <div class="modal-input-wrapper">
+              <input class="modal-form-input" type="text" name="email" />
+              <svg class="modal-form-icon" width="18px" height="24px">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form-wrapper">
+            <label class="modal-form-label">Comment</label>
+            <div class="modal-textarea-wrapper">
+              <textarea
+                class="modal-form-textarea"
+                name="description"
+                placeholder="Text input"
+                rows="5"
+              ></textarea>
+            </div>
+          </div>
 
-          <label class="form-label">
-            Phone
-            <input class="form-input" type="text" name="phone" autofocus />
-          </label>
-
-          <label class="form-label">
-            Email
-            <input class="form-input" type="text" name="email" />
-          </label>
-
-          <label class="form-label">
-            Comment
-            <textarea
-              class="form-input"
-              name="description"
-              placeholder="Text input"
-              rows="5"
-            ></textarea>
-          </label>
-
-          <button type="submit">Submit feedback</button>
+          <button type="submit">Send</button>
         </form>
       </div>
     </div>
